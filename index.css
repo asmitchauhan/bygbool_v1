@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  transition: 0.5s all;
+  background-color: #186ab623;
+}
+.body header .logo {
+  height: 100px;
+  width: 40%;
+  text-align: center;
+}
+.body header .logo .a1 {
+  line-height: 100px;
+  color: #186ab6;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.body header .logo .a2 {
+  line-height: 100px;
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.body header .menu {
+  height: 100px;
+  width: 60%;
+}
+.menu ul {
+  height: 100px;
+  display: flex;
+  float: right;
+  margin-right: 10%;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  line-height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #2b2b2b;
+  letter-spacing: 1px;
+  transition: 0.3s all;
+}
+.menu ul li a:hover {
+  color: #186ab6;
+}
+.menu #check {
+  display: none;
+}
+.menu .checkbtn {
+  display: none;
+}
+.content .btn-div .btn:hover{
+  background-color: #fff;
+  color: #135796;
+}
+@media (max-width: 872px) {
+  .menu .checkbtn {
+    display: block;
+    float: right;
+    margin-right: 20%;
+    margin-top: 32.5px;
+    font-size: 30px;
+    color: #186ab6;
+    cursor: pointer;
+  }
+  .menu .checkbtn:hover {
+    color: #135796;
+  }
+  .body header .logo {
+    width: 90%;
+    text-align: center;
+  }
+  .menu {
+    width: 10%;
+    text-align: center;
+  }
+  .menu ul {
+    position: fixed;
+    display: block;
+    height: 520px;
+    top: 100px;
+    right: -100%;
+    width: calc(100% - 40px);
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: black 1px 2px 9px;
+    background-color: #186ab6;
+    text-align: center;
+    transition: 0.6s all;
+    text-align: center;
+    margin: 20px;
+  }
+  .menu ul li{
+    margin-top: 60px;
+  }
+  .menu ul li a {
+    color: #fff;
+    transition: 0.3s all;
+  }
+  .menu ul li a:hover {
+    color: #a8a8a8;
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+}
+.empty{
+  height: 100px;
+  width: 100%;
+}
+.about{
+  height: 100vh;
+  width: 100%;
+  background-color: hsla(209, 70%, 82%, 0.685);
+} 
+.about h1{
+  font-size: 50px;
+  color: #135796;
+  margin-left: 5%;
+}
+.about p{
+  font-size: 22px;
+  color: #2b2b2b;
+  margin-left: 5%;
+  text-align: left;
+  margin-top: 6%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 5%;
+}
+.projects{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(240, 227, 229, 0.938);
+}
+.projects h1{
+  font-size: 50px;
+  color: #135796;
+  margin-left: 5%;
+}
+.projects p{
+  font-size: 22px;
+  color: #2b2b2b;
+  margin-left: 5%;
+  text-align: left;
+  margin-top: 6%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 5%;
+}
+footer{
+  height: 40px;
+  width: 100%;
+  background-color: #186ab6; 
+  display: flex;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  height: 40px;
+}
+footer ul li {
+  line-height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+footer ul li img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+footer ul li img:hover {
+  filter: brightness(70%);
+}
+.content{
+  text-align: center;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.content h1{
+  margin-top: 200px;
+  font-size: 50px;
+  color: #135796;
+}
+.content h2{
+  margin-top: 20px;
+  color: #fff;
+}
+.content .btn-div{
+  margin-top: 30px;
+}
+.content .btn-div a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 22px;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  transition: ease .2s;
+}
+
+@media (max-width: 632px){
+  .body header .logo .a2 {
+    display: none;
+  }
+}
+@media (max-width: 608px){
+  .content{
+    text-align: right;
+  }
+  .content h1{
+   margin-left: 5%;
+   margin-right: 5%;
+  }
+  .content h2{
+    margin-left: 5%;
+   margin-right: 5%;
+  }
+  .content .btn-div a{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
